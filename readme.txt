@@ -1,0 +1,3 @@
+multi queue:
+
+複数のqueueを1つのqueueとして見ことも個別のqueueとして見ることもできる拡張queue。
