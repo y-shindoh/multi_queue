@@ -28,7 +28,7 @@ namespace ys
 		std::deque<size_t> index_queue_;	///< 全体を管理するqueue
 		std::deque<TYPE> data_queue_[SIZE];	///< データを持つ個別queue
 		size_t remain_[SIZE];				///< @a index_queue_ と @a data_queue_ の要素数差
-		size_t length_;
+		size_t length_;						///< 個別queue全体が持つ要素数
 
 		/**
 		 * @a index_queue_ の調整
