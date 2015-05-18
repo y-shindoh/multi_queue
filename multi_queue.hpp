@@ -32,6 +32,7 @@ namespace ys
 
 		/**
 		 * @a index_queue_ の調整
+		 * @note	最悪計算量はO(n)。nは @a index_queue_ の長さ。
 		 */
 		void
 		adjust_deque()
@@ -68,6 +69,7 @@ namespace ys
 
 		/**
 		 * 要素数を取得
+		 * @note	最悪計算量はO(1)。
 		 */
 		size_t
 		size() const
@@ -78,6 +80,7 @@ namespace ys
 		/**
 		 * 個別のdequeの要素数を取得
 		 * @param[in]	i	個別queueのインデックス
+		 * @note	最悪計算量はO(1)。
 		 */
 		size_t
 		size(size_t i) const
@@ -163,6 +166,7 @@ namespace ys
 		/**
 		 * 要素を削除
 		 * @note	事前にqueueが空でないことを確認すること。
+		 * @note	最悪計算量はO(n)。nは @a index_queue_ の長さ。
 		 */
 		void
 		dequeue()
@@ -180,6 +184,7 @@ namespace ys
 		 * 個別queueの要素を削除
 		 * @param[in]	i	個別queueのインデックス
 		 * @note	事前にqueueが空でないことを確認すること。
+		 * @note	最悪計算量はO(n)。nは @a index_queue_ の長さ。
 		 */
 		void
 		dequeue(size_t i)
