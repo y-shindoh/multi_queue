@@ -14,7 +14,7 @@
  */
 int main()
 {
-	char data[] = "ccccddcdcdccdd";
+	const char data[] = "ccccddcdcdccdd";
 	ys::MultiQueue<char, 2>* queue = new ys::MultiQueue<char, 2>();
 
 	for (size_t i(0); data[i]; ++i) {
